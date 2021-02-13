@@ -1,0 +1,111 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+:root {
+    --bg: #FAFFFA;
+    --bg-even: #DFEFDF;
+    --bg-hover: #AFBFAF;
+    --bg-head: #5A705F;
+    --bg-head-hover: #4A604F;
+    --arrow-unactive: lightgray;
+    --arrow-active: black;
+    --bg-del-btn: #AE402E;
+}
+
+.body {
+    text-align: center;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#usersTable {
+    display: flex;
+    justify-content: center;
+}
+
+.customers {
+    font-size: 18px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.interaction{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+}
+
+.search_user{
+    width: 30%;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+
+th, td:first-child {
+    background: #92b2ce;
+    color: white;
+    padding: 10px 20px;
+}
+
+th {
+    letter-spacing: 2px;
+}
+
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+
+td {
+    background: #D8E6F3;
+    color: darkslategray;
+    text-align: left;
+    padding-left: 5px;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+}
+
+.customers {
+    width: 50%;
+}
+
+tr:hover td {
+    background: #f3bd48;
+    color: #fff;
+}
+.button_style {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    padding: 5px 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+.button_style_delete{
+    background-color: #db4f4f;
+}
+
+.button_style_add{
+    background-color: darkolivegreen;
+    width: 20%;
+}
+
+.button_style:hover{
+    background-color: #a42828;
+
+}
