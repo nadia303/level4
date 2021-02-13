@@ -5,7 +5,7 @@ const config1 = {
         {title: 'Фамилия', value: 'surname'},
         {title: 'Возраст', value: 'age'},
     ],
-    apiUrl: "http://mock-api.shpp.me/nmishchuk/users"
+    apiUrl: "https://mock-api.shpp.me/nmishchuk/users"
 };
 
 const config2 = {
@@ -16,7 +16,7 @@ const config2 = {
         {title: 'Avatar', value: 'avatar'},
         {title: 'Birthday', value: 'birthday'},
     ],
-    apiUrl: "http://mock-api.shpp.me/nmishchuk/users"
+    apiUrl: "https://mock-api.shpp.me/nmishchuk/users"
 };
 
 const users = [
