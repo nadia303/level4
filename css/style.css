@@ -5,23 +5,13 @@ html {
 *, *::before, *::after {
     box-sizing: inherit;
 }
-:root {
-    --bg: #FAFFFA;
-    --bg-even: #DFEFDF;
-    --bg-hover: #AFBFAF;
-    --bg-head: #5A705F;
-    --bg-head-hover: #4A604F;
-    --arrow-unactive: lightgray;
-    --arrow-active: black;
-    --bg-del-btn: #AE402E;
-}
 
 .body {
     text-align: center;
 
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,17 +28,21 @@ html {
     text-align: center;
 }
 
-.interaction{
+.interaction {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 10px 0 10px 0;
 }
 
-.search_user{
+.search_user {
     width: 30%;
     border-radius: 3px;
     border: 1px solid grey;
+}
+
+.first_row {
+    width: 100%;
 }
 
 th, td:first-child {
@@ -78,6 +72,10 @@ th:first-child, td:first-child {
     text-align: left;
 }
 
+td:last-child {
+    text-align: center;
+}
+
 .customers {
     width: 50%;
 }
@@ -86,6 +84,7 @@ tr:hover td {
     background: #f3bd48;
     color: #fff;
 }
+
 .button_style {
     color: white;
     font-size: 16px;
@@ -96,16 +95,41 @@ tr:hover td {
     letter-spacing: 2px;
     border-radius: 3px;
 }
-.button_style_delete{
+
+.button_style_delete {
     background-color: #db4f4f;
 }
 
-.button_style_add{
-    background-color: darkolivegreen;
-    width: 20%;
+.button_style_add {
+    background-color: #7ea045;
 }
 
-.button_style:hover{
+.button_style_delete:hover {
     background-color: #a42828;
+}
 
+.button_style_add:hover {
+    background-color: #668f1b;
+}
+
+.input_value {
+    width: 100%;
+}
+
+.first_row_notVisible {
+    display: none;
+}
+
+.first_row_visible {
+    display: table-row;
+
+}
+
+.not_entered {
+    border: 1px solid red;
+}
+
+.entered {
+    border: transparent;
+    background: #D8E6F3;
 }
