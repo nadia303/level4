@@ -71,29 +71,15 @@ function addSearchField() {
  * Invokes when the search value was entered
  */
 function findTheUser() {
-    let input, filter, table, tr, td, td_array, i, j;
-    input = document.getElementById("field_to_search");
-    filter = input.value.toUpperCase();
-    console.log("filter");
-    console.log(filter);
-    table = document.getElementById("usersTable");
-    tr = table.getElementsByTagName("tr");
-    for (i = 0; i < tr.length; i++) {
-        td_array = tr[i].getElementsByTagName("td");
-
-        for (j = 0; j < td_array.length; j++) {
-            td = td_array[j];
-            if (td) {
-                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                    console.log("tr[i]");
-                    console.log(tr[i]);
-                    tr[i].style.display = "";
-                    console.log("tr[i]yyyy");
-                    console.log(tr[i]);
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
+    let table = document.querySelector(".table_body")
+    let input = document.getElementById('field_to_search').value;
+    let tds = table.getElementsByTagName("tr");
+    for (let i = 0; i < tds.length; i++) {
+        let that = tds[i];
+        if (that.innerText.toUpperCase().indexOf(input.toUpperCase()) > -1) {
+            that.style.display = '';
+        } else {
+            that.style.display = 'none';
         }
     }
 }
